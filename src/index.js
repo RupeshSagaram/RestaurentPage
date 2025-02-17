@@ -1,3 +1,6 @@
+import {loadContent} from "./initial-page-load";
 import "./styles.css";
 
-console.log("Welcome to our Restaurant Page");
+document.addEventListener("DOMContentLoaded",()=>{
+    loadContent();
+});
