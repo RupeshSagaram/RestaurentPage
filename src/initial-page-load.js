@@ -21,4 +21,6 @@ export function loadContent() {
     contentDiv.appendChild(headingOne);
     contentDiv.appendChild(paraOne);
     contentDiv.appendChild(paraTwo);
+
+    
 }
