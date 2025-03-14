@@ -5,8 +5,8 @@ export function loadContent() {
     // // creating an image element
     const pic = document.createElement("img");
     pic.src = "https://i.pinimg.com/736x/22/6c/3d/226c3dc873298e27ff3e91166808a499.jpg";
-    pic.setAttribute("height","500px");
-    pic.setAttribute("width","450px");
+    pic.setAttribute("height","65%");
+    pic.setAttribute("width","60%");
     pic.alt = "Fine Bar";
     // // appending the image to the contentDiv
     contentDiv.appendChild(pic);
