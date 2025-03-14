@@ -1,8 +1,17 @@
 export function loadContent() {
     const contentDiv = document.getElementById("content");
 
+
+    // // creating an image element
+    const pic = document.createElement("img");
+    pic.src = "https://i.pinimg.com/736x/22/6c/3d/226c3dc873298e27ff3e91166808a499.jpg";
+    pic.setAttribute("height","500px");
+    pic.setAttribute("width","450px");
+    pic.alt = "Fine Bar";
+    // // appending the image to the contentDiv
+    contentDiv.appendChild(pic);
     // creating a heading
-    const headingOne = document.createElement("h1");
+    const headingOne = document.createElement("h2");
     headingOne.textContent = "Welcome to Fine Bar, Where Elegance Meets Flavor";
 
     //creating a paragraph 1

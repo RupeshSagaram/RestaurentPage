@@ -1,6 +1,14 @@
 export function menu() {
     const contentDiv = document.getElementById("content");
 
+    const pic = document.createElement("img");
+    pic.src = "https://i.pinimg.com/736x/b9/aa/6d/b9aa6d112c2f5df551f0ae1d3d0e9116.jpg";
+    pic.setAttribute("height","400px");
+    pic.setAttribute("width","450px");
+    pic.alt = "Fine Bar restaurant";
+    // // appending the image to the contentDiv
+    contentDiv.appendChild(pic);
+
     const foodItems = [
         { name: 'Pizza', description: 'A delicious cheese and tomato pizza.' },
         { name: 'Burger', description: 'A juicy beef burger with lettuce and tomato.' },
@@ -22,6 +30,7 @@ export function menu() {
         foodDiv.innerHTML = `<strong>${item.name}</strong>: ${item.description}`;
         contentDiv.appendChild(foodDiv);
     });
+    
 
     drinkItems.forEach(item => {
         const drinkDiv = document.createElement('div');
@@ -29,5 +38,17 @@ export function menu() {
         contentDiv.appendChild(drinkDiv);
     });
 
+    const styleElements = () => {
+        const allDivs = contentDiv.querySelectorAll('div');
+        allDivs.forEach(div => {
+            div.style.fontSize = '20px';
+            div.style.marginBottom = '7px';
+            div.style.textAlign = 'left';
+        });
+    };
+
+    styleElements();
+
+    contentDiv.style.textAlign = 'left';
 
 }
