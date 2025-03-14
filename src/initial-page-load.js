@@ -9,10 +9,7 @@ export function loadContent() {
     const paraOne = document.createElement("p");
     paraOne.textContent = `Step into Fine Bar, a haven of sophistication and indulgence. 
     Nestled in the heart of the city, we offer an exquisite selection of handcrafted cocktails,
-    premium wines, and gourmet cuisine designed to tantalize your taste buds.Our ambiance blends 
-    modern luxury with a cozy charm, creating the perfect setting for intimate gatherings, lively celebrations, 
-    or a quiet evening of relaxation. Whether you're savoring our signature drinks, enjoying world-class dining, 
-    or unwinding with smooth live music, Fine Bar promises an unforgettable experience.`
+    premium wines, and gourmet cuisine designed to tantalize your taste buds. Fine Bar promises an unforgettable experience.`
 
     //creating paragraph 2
     const paraTwo = document.createElement("p");
